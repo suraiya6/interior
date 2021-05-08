@@ -63,21 +63,64 @@
 
 
       <!-- banner section start here -->
-      <section class="banner">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="banner-text">
-                <h1>Interior Design Solution
-                      For your Business</h1>
-                      <button>Views work</button>
-              </div>
+    <section class=""> 
 
-            </div>
-            <div class="col-md-4"></div>
+      <div class="owl-carousel owl-theme">
+    
+            <div class="banner">
+                <div class="item">
+                  <div class="overlay"></div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-8">
+                            <div class="banner-text">
+                              <h1>Interior Design Solution
+                                    For your Business</h1>
+                                    <button>Views work</button>
+                            </div>
+
+                          </div>
+                          <div class="col-md-4"></div>
+                        </div>
+                      </div>
+                </div>
           </div>
-        </div>
+          <div class="banner1">
+                <div class="item">
+                  <div class="overlay"></div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-8">
+                            <div class="banner-text">
+                              <h1>Interior Design Solution
+                                    For your Business</h1>
+                                    <button>Views work</button>
+                            </div>
+
+                          </div>
+                          <div class="col-md-4"></div>
+                        </div>
+                      </div>
+                </div>
+          </div>
+          
+      </div>
+       <!--  <div class="banner">
+          <div class="overlay"></div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="banner-text">
+                      <h1>Interior Design Solution
+                            For your Business</h1>
+                            <button>Views work</button>
+                    </div>
+
+                  </div>
+                  <div class="col-md-4"></div>
+                </div>
+              </div>
+          </div> -->
       </section>
 
 
@@ -121,7 +164,7 @@
       <!-- category section start here -->
       <section class="cate">
         <div class="cate-box">
-          <div class="item s1">
+          <div class="item1 s1">
             <div class="txt">
               <h2>Planing</h2>
               <p class="p-text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet</p>
@@ -131,7 +174,7 @@
              </div>
           </div>
 
-          <div class="item s2">
+          <div class="item1 s2">
             <div class="txt">
               <h2>Architecture</h2>
               <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet</p>
@@ -141,7 +184,7 @@
              </div>
           </div>
 
-          <div class="item s3">
+          <div class="item1 s3">
             <div class="txt">
               <h2>3D Design</h2>
               <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet</p>
@@ -264,7 +307,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
+                <div class="owl-carousel owl-theme">
               <div class="testimonial-text t1">
+                <div class="item">
                <img src="img/quote.svg">
                <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque. Fusce ac mattis nulla. Morbi eget ornare dui.  </p>
               </div>
@@ -275,6 +320,8 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
         </div>
       </section>
         <!-- user section end here -->
@@ -402,8 +449,12 @@
         $('.owl-carousel').owlCarousel({
               loop:true,
               margin:10,
-              nav:true,
+              nav:false,
+              dots:false,
               
+               autoplay:true,
+              autoplayTimeout:3000,
+              autoplayHoverPause:true,
               responsive:{
                   0:{
                       items:1
