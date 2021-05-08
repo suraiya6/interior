@@ -16,14 +16,36 @@ header section
 header{
 	position: absolute;
 	width: 100%;
+	z-index: 9;
+}
+.sticky{
+	width: 100%;
+	position: fixed;
+	z-index: 99999;
+	background: rgba(0,0,0,0.8);
 }
 .nav-item{
-    padding: 5px 16px;
+    padding: 10px 16px;
 }
 .nav-link{
 	color: #fff !important;
 	font-size: 15px;
 	    font-weight: 500;
+}
+.d-flex a{
+   font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: relative;
+}
+.d-flex a:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	background: #FFE8C3;
+	height: 3px;
+	    top: 25px;
+	    left: 0;
 }
 
 /***************
@@ -38,7 +60,7 @@ banner section
 	height: 100vh;
 	padding: 80px 0;
 	position: relative;
-	z-index: -9;
+	z-index: 1;
 }
 .overlay{
 	position: absolute;
@@ -48,7 +70,7 @@ banner section
 	bottom: 0;
 	left: 0;
 	right: 0;
-z-index: -1;
+	z-index: -1;
 }
 .banner-text{
 margin-right: 28px;
@@ -59,7 +81,7 @@ margin-right: 28px;
 .banner-text h1{
 	font-weight: 600;
     font-size: 60px;
-    color: #ffffff;
+    color: #ffffff !important;
     margin-bottom: 37px;
 }
 .banner-text button{
@@ -67,6 +89,11 @@ margin-right: 28px;
     background:#FFE8C3;
     border: none;
     text-transform: capitalize;
+    color: #001D38;
+}
+.banner-text button:hover{
+    color: #fff !important;
+    background: #001D38;
 }
 
 /***********
@@ -190,14 +217,14 @@ our-works section
 ***************/
 .our-works{
 	width: 100%;
-	padding:160px 0;
+	padding:180px 0;
 	background-color: #F5FBFF;
 }
 .our-works h1{
 	    font-size: 50px;
     font-weight: 500;
     color: #001D38;
-    margin-bottom: 42px;
+      margin-bottom: 120px;
 }
 .detials h3{
 font-size: 30px;
@@ -210,7 +237,7 @@ font-size: 30px;
     margin-bottom: 38px;
          width: 130%;
 }
-.detials button{
+.detials button, .right button{
 	 padding: 18px 48px;
     background:#001D38;
    
@@ -229,10 +256,286 @@ font-size: 30px;
     text-align: center;
     text-transform: capitalize
 }
+.detials button:hover{
+	    color: #001D38 !important;
+    border: 1px solid #001D38;
+    background: #fff;
+}
+.right button:hover{
+	  color: #001D38 !important;
+    border: 1px solid #001D38;
+    background: #fff;
+}
 .work-details .col-md-4{
 	display: flex;
 	align-items: center;
 }
 .detials{
 	    margin-left: 59px;
+}
+.work-details .container {
+    margin-top: -235px;
+}
+.work-details .row{
+	margin-bottom: 85px;
+}
+.del{
+	margin-left: 0;
+}
+.del p{
+	width: 123%;
+}
+.img{
+	margin-left: 87px;
+
+}
+/***************
+about section 
+***************/
+.about{
+	width: 100%;
+	background-color: #F5FBFF;
+	display: flex;
+	 align-items: center; 
+}
+/*.left{
+	flex-basis: 50%;
+}*/
+.right{
+    padding-left: 80px;
+   /* flex-basis: 55%;*/
+     padding-right: 70px; 
+    }
+.right h1{
+	    font-size: 40px;
+	    font-weight: 500;
+	    color: #001D38;
+	  /*  margin-top: 41px;*/
+}
+.right p{
+    font-size: 16px;
+    color: #727272;
+    font-weight: 400;
+    width: 90%;
+margin-top: 15px;
+    margin-bottom: 18px;
+}
+.right button{
+
+}
+.about-stat
+{margin: 0;
+	padding: 0;
+	padding-bottom: 30px;}
+.about-stat li{
+	list-style: none;
+	margin-bottom: 30px;
+}
+.about-stat li h5{
+	/*margin-top: 28px;*/
+}
+.about-stat li .line1{
+	height: 3px;
+	width: 60%;
+	background: #001d38;
+}
+.about-stat li .line2{
+	height: 3px;
+	width: 70%;
+	background: #001d38;
+}
+.about-stat li .line3{
+	height: 3px;
+	width: 80%;
+	background: #001d38;
+}
+
+/**************
+testimonial section
+****************/
+.testimonial{
+	width: 100%;
+	background: url(../img/testmonial.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 75vh;
+	position: relative;
+	z-index: 1;
+}
+.testimonial-text{
+	    text-align: center;
+    /* margin: 0 auto; */
+    padding-top:166px;
+}
+
+.testimonial-text p{
+	    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+.testimonial-text img{
+	margin-bottom: 24px;
+}
+.t1{
+
+}
+.overly{
+	
+}
+.overly:before{
+	content: '';
+	position: absolute;
+    background-color: #001D38;
+	opacity: 0.5;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index:-1;
+}
+.testimonial-pic{
+	text-align: center;
+	margin-top: 28px;
+}
+.testimonial-pic h3{
+	    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 5px;
+  /*  margin-bottom: 17px;*/
+}
+.testimonial-pic span{
+	font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+/**************
+instra section
+****************/
+.instra{
+	width: 100%;
+	padding: 100px 0;
+	text-align: center;
+}
+.instra h1{
+	    font-size: 50px;
+    font-weight: 500;
+    color: #001D38;
+        margin: 54px 0;
+}
+/**************
+footer section
+****************/
+.footer{
+	width: 100%;
+	    padding: 80px 0px 30px 0px;
+	background: #001D38;
+}
+.foot{
+	border-bottom: 1px solid #334A60;
+}
+.footer-text{
+margin-bottom:40px;
+}
+.footer-text h1{
+	    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 16px;
+    font-family: "Poppins", sans-serif;
+}
+.footer-text h1 a{
+	color:  #FFD35A;
+}
+.text2{
+	text-align: right;
+}
+.text2 p a{
+	font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.footer-del{
+    margin-top: 48px;
+}
+.footer-del h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.footer-del p{
+    color: #D5D5D5;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.footer-del span a{
+    color: #D5D5D5;
+    font-weight: 400;
+}
+.sub{
+	margin-right: 30px;
+}
+/*.for{
+	margin-left: 20px;
+}*/
+.footer-form{
+margin-bottom: 12px;
+}
+.footer-form input{
+        color: #fff;
+    /* border: none; */
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+	border: 1px solid #334A60;
+      width: 98%;
+        height: 50px;
+    line-height: 49px;
+    border-radius: 34px;
+    margin-left: 12px;
+    padding-left: 22px;
+}
+.footer-form button{
+    
+   
+    color: #001D38;
+    background: #FFE8C3;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+       width: 40%;
+    height: 44px;
+    border-radius: 50px;
+    line-height: 44px;
+    /* margin-right: -18px; */
+    margin-left: -148px;
+ }
+.ptxt{
+	margin-top: 15px;
+	    margin-left: 24px;
+}
+.footer-txt{
+	text-align: center;
+
+}
+.footer-txt p{
+	    font-size: 14px;
+    color: #919191;
+    	margin-bottom: 0;
+    font-weight: 400;
+ }
+.footer-txt p a{
+	color: #FFE8C3;
+}
+.footer-f{
+	padding-top: 60px;
+    padding-bottom: 100px;
 }
